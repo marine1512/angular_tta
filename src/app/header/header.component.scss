@@ -1,5 +1,5 @@
 .navbar{
-    border-bottom: 0.5em solid #151217;
+    border-bottom: 0.5em solid #1512172b;
     padding: 1cm;
 }
 
@@ -11,6 +11,8 @@
 .container-fluid {
     display: flex;
     gap: 1em;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .nav-item a,.navbar-nav li{
@@ -20,4 +22,8 @@
     list-style-type: none;
     text-decoration: none;
     color: black;
+}
+
+.trait_header {
+    rotate: 90deg;
 }
