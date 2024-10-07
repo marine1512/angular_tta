@@ -1,0 +1,31 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 3em;
+}
+
+.titre h1,  .titre h2{
+    color: #00497C;
+}
+
+.etapes {
+    margin: 4em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+}
+
+.etape {
+    width: 15%;
+    text-align: center;
+}
+
+button  {
+    background-color: #0074C7;
+    color: white;
+    width: fit-content;
+    border-radius: 30px;
+    padding: 1em;
+}

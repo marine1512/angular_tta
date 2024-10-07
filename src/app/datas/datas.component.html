@@ -1,0 +1,9 @@
+<div class="meilleurs">
+    <div *ngFor ="let data of (datas) " class="datas">
+            <h3>{{ data.name }}</h3>
+            <p>{{ data.specialty }}</p>
+            <p>{{ data.location }}</p>
+            <p>{{ data.top }}</p>
+            <!-- <button [routerLink]="['/produits', produit.id]">Voir produit</button> -->
+    </div>
+</div>
