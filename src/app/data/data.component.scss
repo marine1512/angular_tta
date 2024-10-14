@@ -1,0 +1,40 @@
+.fiche{
+    border: 0.5em solid black;
+    border-radius: 30px;
+    box-shadow: 12px 12px 16px 1px #0074C7;
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+    
+    img {
+        width: 30em;
+    }
+    .artisan-texte {
+        width: 70%;
+        .blue {
+            color: #0074C7;
+            margin-bottom: 5em;
+        }
+    }
+    .artisan-about {
+        color: white;
+        background-color: #0074C7;
+        width: 30%;
+    }
+}
+
+.formulaire{
+    width: 90%;
+    .form{
+        border: 1em solid #0074C7;
+        margin-bottom: 2em;
+    }
+    button  {
+        background-color: #0074C7;
+        color: white;
+        width: fit-content;
+        border-radius: 30px;
+        padding: 1em;
+        margin: 1em;
+    }
+}

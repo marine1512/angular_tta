@@ -1,0 +1,15 @@
+<div class="meilleurs row">
+    <div *ngFor ="let data of (datas | category:sortOrderBatiment)" class="datas col-3 d-flex flex-column align-items-center" [routerLink]="['/datas', data.id]">
+        <img src="/artisan.png">
+        <h3>{{ data.name }}</h3>
+        <p>{{ data.specialty }}</p>
+        <div class="etoiles d-flex">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <p>{{ data.note }}</p>
+        </div>
+            <p>{{ data.location }}</p>
+    </div>
+</div>
