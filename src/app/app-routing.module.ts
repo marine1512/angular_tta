@@ -4,6 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { DataComponent } from './data/data.component';
 import { DatasAllComponent } from './datas-all/datas-all.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BatimentComponent } from './batiment/batiment.component';
+import { ServicesComponent } from './services/services.component';
+import { FabricationComponent } from './fabrication/fabrication.component';
+import { AlimentationComponent } from './alimentation/alimentation.component';
+
 
 
 const routes: Routes = [
@@ -11,6 +16,12 @@ const routes: Routes = [
   { path: "datas/:id", component: DataComponent},
   { path: "datas", component: DatasAllComponent},
   { path: "*", component: NotFoundComponent},
+  { path: "batiment", component: BatimentComponent},
+  { path: "services", component: ServicesComponent},
+  { path: "fabrication", component: FabricationComponent},
+  { path: "alimentation", component: AlimentationComponent}
+
+
 
 
 ];

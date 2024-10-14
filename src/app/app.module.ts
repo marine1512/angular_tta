@@ -11,6 +11,14 @@ import { TopPipe } from './top.pipe';
 import { DataComponent } from './data/data.component';
 import { DatasAllComponent } from './datas-all/datas-all.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BatimentComponent } from './batiment/batiment.component';
+import { CategoryPipe } from './category.pipe';
+import { ServicesComponent } from './services/services.component';
+import { Category2Pipe } from './category-2.pipe';
+import { Category3Pipe } from './category-3.pipe';
+import { FabricationComponent } from './fabrication/fabrication.component';
+import { Category4Pipe } from './category-4.pipe';
+import { AlimentationComponent } from './alimentation/alimentation.component';
 
 
 @NgModule({
@@ -24,6 +32,15 @@ import { NotFoundComponent } from './not-found/not-found.component';
     DataComponent,
     DatasAllComponent,
     NotFoundComponent,
+    BatimentComponent,
+    CategoryPipe,
+    ServicesComponent,
+    Category2Pipe,
+    Category3Pipe,
+    FabricationComponent,
+    Category4Pipe,
+    AlimentationComponent,
+
 
   ],
   imports: [
