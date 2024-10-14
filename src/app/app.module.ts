@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { DatasComponent } from './datas/datas.component';
+import { TopPipe } from './top.pipe';
+import { DataComponent } from './data/data.component';
+import { DatasAllComponent } from './datas-all/datas-all.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { DatasComponent } from './datas/datas.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    DatasComponent
+    DatasComponent,
+    TopPipe,
+    DataComponent,
+    DatasAllComponent,
+    NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
