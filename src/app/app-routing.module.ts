@@ -8,6 +8,7 @@ import { BatimentComponent } from './batiment/batiment.component';
 import { ServicesComponent } from './services/services.component';
 import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: "batiment", component: BatimentComponent},
   { path: "services", component: ServicesComponent},
   { path: "fabrication", component: FabricationComponent},
-  { path: "alimentation", component: AlimentationComponent}
+  { path: "alimentation", component: AlimentationComponent},
+  { path: "search", component: SearchComponent}
 
 
 

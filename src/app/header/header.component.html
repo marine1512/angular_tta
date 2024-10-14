@@ -22,17 +22,17 @@
             <div class="container py-2" id="searchBar">
               <div class="row">
                   <div class="input-group col-md-4">
-                      <input class="form-control py-2" type="search" value="search" id="example-search-input">
+                      <input class="form-control py-2" type="search" value="search" id="example-search-input" [(ngModel)]="searchTerm" (change)="searchTerm=searchTerm">
                       <span class="input-group-append">
-                          <button class="btn btn-outline-secondary" type="button">
-                              <i class="fa fa-search"></i>
-                          </button>
+                          <a routerLink="/search"><button class="btn btn-outline-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                          </button></a>
                       </span>
                   </div>
               </div>
-          </div>
+          </div> 
           </li>
-        </ul>        
+        </ul>       
       </div>
     </div>
   </nav>
