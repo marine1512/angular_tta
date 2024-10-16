@@ -1,5 +1,5 @@
 <div class="meilleurs row">
-    <div *ngFor ="let data of (datas | filterByName:searchTerm)" class="datas col-3 d-flex flex-column align-items-center" [routerLink]="['/datas', data.id]">
+    <div *ngFor ="let data of (datas)" class="datas col-3 d-flex flex-column align-items-center" [routerLink]="['/datas', data.id]">
         <img src="/artisan.png">
         <h3>{{ data.name }}</h3>
         <p>{{ data.specialty }}</p>

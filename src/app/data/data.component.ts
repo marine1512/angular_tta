@@ -26,18 +26,10 @@ import { datasService } from '../datas.service';
         <img src="/Line-rouge.png">
         <h2>Pour le contacter <i class="fa-regular fa-circle-down"></i></h2>
       </div>
-      <form class="form d-flex flex-column">
-        <label>Prénom nom</label><input type="texte"/>
-        <label>E-mail</label><input type="email"/>
-        <label>Sujet</label><select id="payment" name="payment">
-        <option>...</option>
-        <option>Prendre contact</option>
-        <option>Prendre contact</option>
-        <option>Prendre contact</option>
-        </select>
-        <label>Message</label><textarea></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
+      <app-formulaire/>
+      <div class="artisan-mail text-center">
+        <h3>Email: {{ data.email }}</h3>
+      </div>
     </div>
 </div>
   `,
@@ -54,7 +46,6 @@ export class DataComponent {
     this.datas = this.datasService.datas; 
     this.route.params.subscribe( params => {
       this.data = this.datas.find(data => data.id === params['id']) // Affichage des produits selon leur ID.
-   }) 
-  }
+   })
 }
-
+}

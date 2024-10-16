@@ -21,6 +21,7 @@ import { Category4Pipe } from './category-4.pipe';
 import { AlimentationComponent } from './alimentation/alimentation.component';
 import { SearchComponent } from './search/search.component';
 import { FilterPipe } from './filter.pipe';
+import { FormulaireComponent } from './formulaire/formulaire.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { FilterPipe } from './filter.pipe';
     AlimentationComponent,
     SearchComponent,
     FilterPipe,
+    FormulaireComponent,
 
 
   ],

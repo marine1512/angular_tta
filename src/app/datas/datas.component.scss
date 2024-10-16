@@ -17,9 +17,13 @@
     cursor: pointer;
 }
 
+.datas:hover {
+    background-color: #0074c7b3;
+}
+
 .etoiles {
     display: flex;
 }
 .checked {
-    color: #0074C7;
+    color: #0074c7;
 }
