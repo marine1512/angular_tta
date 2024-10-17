@@ -29,8 +29,13 @@
 }
 
 #searchBar{
-    margin: 0;
-    padding: 0;
+    width: 19.1em;
+    border-bottom: 0.3em solid #0074C7;
+    border-right: 0.3em solid #0074C7;
+}
+
+.form-control {
+    border: var(--bs-border-width) solid #dee2e600;
 }
 
 .btn{

@@ -1,12 +1,19 @@
 .form{
+    color: #0074C7;
     border: 0.5em solid #0074C7;
+    background-color: #F1F8FC;
     padding: 0.5em;
+    margin-bottom: 2em;
+    input, textarea{
+        background-color: #F1F8FC;
+        border: 0.1em solid #0074C7;
+    }
     button  {
         background-color: #0074C7;
         color: white;
         width: fit-content;
         border-radius: 30px;
         padding: 1em;
-        margin: 1em;
+        margin: 0.5em 0;
     }
 }

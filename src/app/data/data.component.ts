@@ -8,7 +8,7 @@ import { datasService } from '../datas.service';
   template:`
   <div class="data d-flex flex-column align-items-center">
     <div class="fiche d-flex ">
-      <div class="artisan d-flex flex-column align-items-center">
+      <div class="artisan d-flex flex-column align-items-center justify-content-center">
         <img src="/artisan.png" class="img-fluid">
         <h3>{{ data.note }}</h3>
       </div>
@@ -21,17 +21,17 @@ import { datasService } from '../datas.service';
         <h3>{{ data.about }}</h3>
       </div>
     </div>
-    <div class="formulaire flex-column">
-      <div class="titre">
-        <img src="/Line-rouge.png">
-        <h2>Pour le contacter <i class="fa-regular fa-circle-down"></i></h2>
-      </div>
-      <app-formulaire/>
-      <div class="artisan-mail text-center">
-        <h3>Email: {{ data.email }}</h3>
-      </div>
+  </div>
+  <div class="formulaire">
+    <div class="titre">
+      <img src="/Line-rouge.png">
+      <h2>Pour le contacter <i class="fa-regular fa-circle-down"></i></h2>
     </div>
-</div>
+    <app-formulaire/>
+    <div class="artisan-mail text-center">
+      <h3>Email: {{ data.email }}</h3>
+    </div>
+  </div>
   `,
   styleUrl: './data.component.scss'
 })

@@ -3,7 +3,6 @@
     border-radius: 30px;
     box-shadow: 12px 12px 16px 1px #0074C7;
     margin: 1em;
-    padding: 1em;
     width: 90%;
     
     img {
@@ -19,22 +18,15 @@
     .artisan-about {
         color: white;
         background-color: #0074C7;
+        border-radius: 0 21px 21px 0;
         width: 30%;
     }
 }
 
+.fa-regular{
+    color: #0074C7;
+}
+
 .formulaire{
-    width: 90%;
-    .form{
-        border: 1em solid #0074C7;
-        margin-bottom: 2em;
-    }
-    button  {
-        background-color: #0074C7;
-        color: white;
-        width: fit-content;
-        border-radius: 30px;
-        padding: 1em;
-        margin: 1em;
-    }
+margin: 0 4em;
 }
