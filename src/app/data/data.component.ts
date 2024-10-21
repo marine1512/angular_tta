@@ -10,7 +10,14 @@ import { datasService } from '../datas.service';
     <div class="fiche d-flex ">
       <div class="artisan d-flex flex-column align-items-center justify-content-center">
         <img src="/artisan.png" class="img-fluid">
-        <h3>{{ data.note }}</h3>
+        <div class="etoiles d-flex">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <p>{{ data.note }}</p>
+        </div>
       </div>
       <div class="artisan-texte d-flex flex-column justify-content-center align-items-center">
         <h3>{{ data.name }}</h3>

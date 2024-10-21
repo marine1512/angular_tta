@@ -7,6 +7,12 @@
     img {
         width: 30em;
     }
+    .etoiles{
+        font-size: 2em;
+        .checked{
+            color: #0074C7;
+        }
+    }
     .artisan-texte {
         width: 70%;
         .blue {
