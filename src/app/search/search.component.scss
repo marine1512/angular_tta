@@ -1,18 +1,16 @@
 .meilleurs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.datas {
-    border: 0.5em solid black;
-    border-radius: 30px;
-    box-shadow: 12px 12px 16px 1px #0074C7;
-    margin: 1em;
-    padding: 1em;
-    cursor: pointer;
-}
-
-.checked {
-    color: #0074C7;
+    .datas {
+        border: 0.5em solid black;
+        border-radius: 30px;
+        box-shadow: 12px 12px 16px 1px #0074C7;
+        margin: 1em;
+        padding: 1em;
+        cursor: pointer;
+    }
+    .datas:hover {
+        background-color: #0074c7b3;
+    }
+    .checked {
+        color: #0074C7;
+    }
 }
