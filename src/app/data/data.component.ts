@@ -25,7 +25,7 @@ import { datasService } from '../datas.service';
         <h3>{{ data.location }}</h3>
       </div>
       <div class="artisan-about text-center d-flex align-items-center p-5">
-        <h3>{{ data.about }}</h3>
+        <p>{{ data.about }}</p>
       </div>
     </div>
   </div>
