@@ -1,3 +1,8 @@
+<div class="titre">
+    <img src="/Line_verte.png">
+    <h2>Liste des artisans</h2>
+    <h4><i>Cliquez sur une fiche pour avoir plus de détails !</i></h4>
+</div>
 <div class="container">
         <div *ngFor ="let data of (datas | category:sortOrderBatiment)" class="datas col-3" [routerLink]="['/datas', data.id]">
             <img src="/artisan.png">

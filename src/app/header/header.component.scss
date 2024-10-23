@@ -23,9 +23,12 @@
     }
     
     .nav-item a:hover, .navbar-nav li:hover {
+        
         color: #0074C7;
     }
-    
+    .nav-item a:focus{
+        color: #0074C7;
+    }
     #searchBar{
         
         width: 19.1em;
@@ -41,3 +44,9 @@
         color: #0074C7;
     }
 }
+
+@media (max-width: 992px) {
+    .nav-item a,.navbar-nav li{
+        font-size: 0.5em;
+    }
+ }
