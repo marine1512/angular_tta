@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { datasService } from '../datas.service';
 
 @Component({
@@ -13,4 +13,5 @@ export class AlimentationComponent {
   ngOnInit() {
     this.datas = this.datasService.datas;
   }
+  @Input() searchTermBis: string ='';
 }

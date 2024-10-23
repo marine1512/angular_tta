@@ -1,8 +1,9 @@
-<div class="meilleurs d-flex row justify-content-center">
-    <div *ngFor ="let data of (datas | category3:sortOrderFabrication)" class="datas col-3 d-flex flex-column align-items-center" [routerLink]="['/datas', data.id]">
+<div class="container">
+    <div *ngFor ="let data of (datas | category3:sortOrderFabrication)" class="datas col-3" [routerLink]="['/datas', data.id]">
         <img src="/artisan.png">
         <h3>{{ data.name }}</h3>
-        <p>{{ data.specialty }}</p>
+        <p
+        >{{ data.specialty }}</p>
         <div class="etoiles d-flex">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>

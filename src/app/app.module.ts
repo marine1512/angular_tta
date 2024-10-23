@@ -22,6 +22,8 @@ import { AlimentationComponent } from './alimentation/alimentation.component';
 import { SearchComponent } from './search/search.component';
 import { FilterPipe } from './filter.pipe';
 import { FormulaireComponent } from './formulaire/formulaire.component';
+import { ArtisanFilterPipe } from './artisan-filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -46,12 +48,13 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
     SearchComponent,
     FilterPipe,
     FormulaireComponent,
-
+    ArtisanFilterPipe,
+  
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
