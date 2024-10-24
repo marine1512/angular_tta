@@ -8,7 +8,7 @@ import { datasService } from '../datas.service';
 })
 export class BatimentComponent {
   datas: any[] = []; // Création d'un tableau pour les produits.
-  sortOrderBatiment: string = 'asc'; 
+  sortOrderBatiment: string = 'asc'; // Tri des artisans selon leur catégorie.
   constructor(private datasService: datasService) {}
   ngOnInit() {
     this.datas = this.datasService.datas;
