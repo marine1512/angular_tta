@@ -1,6 +1,5 @@
-import { Component, Output } from '@angular/core';
-import { NgForm, FormsModule } from '@angular/forms';
-
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +8,10 @@ import { NgForm, FormsModule } from '@angular/forms';
 
 })
 export class HeaderComponent {
- @Output() searchTermBis : string = '';
+ constructor(private router : Router) {}
+ // déclaration de la fonction de recherche par Nom, Ville ou Spécialité
+ searchArtisan(searchTerm: string = '') { 
+   this.router.navigate(['/search', {term: searchTerm}]); 
+   // Fonction appelé dans la route "/search"
+ }
 }

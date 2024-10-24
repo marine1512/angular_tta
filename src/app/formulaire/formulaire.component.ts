@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
@@ -7,6 +7,7 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './formulaire.component.scss'
 })
 export class FormulaireComponent {
+  // Fonction envoie de mail
   public sendEmail(e: Event) {
     e.preventDefault();
 
@@ -17,7 +18,7 @@ export class FormulaireComponent {
       .then(
         () => {
           console.log('SUCCESS!');
-          alert("Message envoyé !")
+          alert("Message envoyé !") // Message affiché si tout se passe bien
         },
         (error) => {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);

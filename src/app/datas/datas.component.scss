@@ -1,7 +1,5 @@
 .container {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     .datas {
         border: 0.5em solid black;
         height: 20em;
@@ -11,14 +9,10 @@
         margin: 1em;
         padding: 1em;
         cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .datas:hover {
         background-color: #0074c780;
     }
-    
     .checked {
         color: #0074C7;
     }
