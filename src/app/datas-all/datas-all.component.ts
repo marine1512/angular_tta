@@ -8,8 +8,9 @@ import { datasService } from '../datas.service';
 })
 export class DatasAllComponent {
   datas: any[] = []; // Création d'un tableau pour les produits.
-  sortOrder: string = 'asc'; 
+  sortOrder: string = 'asc'; // Déclaration de la fonction.
   constructor(private datasService: datasService) {}
+  // Initialisation
   ngOnInit() {
     this.datas = this.datasService.datas;
   }

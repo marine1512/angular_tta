@@ -10,8 +10,8 @@ export class AlimentationComponent {
   datas: any[] = []; // Création d'un tableau pour les produits.
   sortOrderAlimentation: string = 'asc'; // Tri des artisans selon leur catégorie.
   constructor(private datasService: datasService) {}
-  ngOnInit() {
+  //Initialisation
+  ngOnInit() { 
     this.datas = this.datasService.datas;
   }
-
 }

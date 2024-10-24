@@ -10,8 +10,6 @@ import { FabricationComponent } from './fabrication/fabrication.component';
 import { AlimentationComponent } from './alimentation/alimentation.component';
 import { SearchComponent } from './search/search.component';
 
-
-
 const routes: Routes = [
   { path: "", component: HomeComponent},
   { path: "datas/:id", component: DataComponent},
@@ -22,10 +20,6 @@ const routes: Routes = [
   { path: "alimentation", component: AlimentationComponent},
   { path: "search", component: SearchComponent},
   { path: "**", component: NotFoundComponent}
-
-
-
-
 ];
 
 @NgModule({

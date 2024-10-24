@@ -10,6 +10,7 @@ export class ServicesComponent {
   datas: any[] = []; // Création d'un tableau pour les produits.
   sortOrderServices: string = 'asc'; // Tri des artisans selon leur catégorie.
   constructor(private datasService: datasService) {}
+  // Initialisation 
   ngOnInit() {
     this.datas = this.datasService.datas;
   }

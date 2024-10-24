@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { datasService } from '../datas.service';
 
-
 @Component({
   selector: 'app-data',
   template:`
@@ -32,7 +31,9 @@ import { datasService } from '../datas.service';
   <div class="formulaire">
     <div class="titre">
       <img src="/Line-rouge.png">
-      <h2>Pour le contacter <i class="fa-regular fa-circle-down"></i></h2>
+      <h2>Pour le contacter 
+        <i class="fa-regular fa-circle-down"></i>
+      </h2>
     </div>
     <app-formulaire/>
     <div class="artisan-mail text-center">
@@ -48,11 +49,12 @@ export class DataComponent {
   data: any;
   
   constructor(private datasService: datasService) {}
-
+// Initialisation
   ngOnInit() {
     this.datas = this.datasService.datas; 
     this.route.params.subscribe( params => {
-      this.data = this.datas.find(data => data.id === params['id']) // Affichage des produits selon leur ID.
+      this.data = this.datas.find(data => data.id === params['id']) 
+      // Affichage des produits selon leur ID dans une route "data".
    })
 }
 }

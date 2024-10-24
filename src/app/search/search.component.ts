@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { datasService } from '../datas.service';
-import { NgForm, FormsModule } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -10,8 +10,12 @@ import { NgForm, FormsModule } from '@angular/forms';
 export class SearchComponent {
   datas: any[] = []; // Création d'un tableau pour les produits.
   searchTerm: string = ''; // Fonction de recherche.
-  constructor(private datasService: datasService) {}
+  constructor(private datasService: datasService, private route : ActivatedRoute) {}
+  // Initialisation de la fonction pour tri des datas
   ngOnInit() {
-    this.datas = this.datasService.datas;
+    this.route.params.subscribe(params=>{
+      this.searchTerm = params['term'];
+      this.datas = this.datasService.datas;
+    })
   }
 }
