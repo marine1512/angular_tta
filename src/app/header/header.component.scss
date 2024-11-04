@@ -7,29 +7,27 @@
         margin-left: 2em;
     }
     .container-fluid {
-        display: flex;
         gap: 1em;
-        flex-direction: column;
-        align-items: flex-start;
     }
     
     .nav-item a,.navbar-nav li{
         font-size: 1.3em;
-        display: flex;
         gap: 1em;
         list-style-type: none;
         text-decoration: none;
         color: black;
+        cursor: pointer;
     }
     
-    .nav-item a:hover, .navbar-nav li:hover {
+    .nav-item a:hover {
         color: #0074C7;
+        text-decoration: underline;
     }
     .nav-item a:focus{
         color: #0074C7;
+        text-decoration: underline;
     }
     #searchBar{
-        
         width: 19.1em;
         border-bottom: 0.3em solid #0074C7;
         border-right: 0.3em solid #0074C7;
@@ -43,9 +41,3 @@
         color: #0074C7;
     }
 }
-
-@media (max-width: 992px) {
-    .nav-item a,.navbar-nav li{
-        font-size: 0.5em;
-    }
- }

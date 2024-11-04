@@ -1,24 +1,25 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-        <a routerLink="/"><img src="/Logo.png"/></a>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid d-flex flex-column align-items-start">
+        <a routerLink="/"><img src="/Logo.png" alt="Logo"/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/batiment"><li>Bâtiment</li></a>
+          <li class="nav-item d-flex">
+            <a class="nav-link d-flex" routerLink="/batiment">Bâtiment</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/services"><li>Services</li></a>
+          <li class="nav-item d-flex">
+            <a class="nav-link d-flex" routerLink="/services">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/fabrication"><li>Fabrication</li></a>
+          <li class="nav-item d-flex">
+            <a class="nav-link d-flex" routerLink="/fabrication">Fabrication</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/alimentation"><li>Alimentation</li></a>
+          <li class="nav-item d-flex">
+            <a class="nav-link d-flex" routerLink="/alimentation">Alimentation</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-flex">
             <div class="container py-2" id="searchBar">
               <div class="row">
                   <div class="input-group col-md-4">
@@ -31,11 +32,9 @@
                         (input)="searchArtisan(searchTerm.value)"
                       >
                       <span class="input-group-append">
-                          <a routerLink="/search">
-                            <button class="btn" type="button">
-                              <i class="fa fa-search"></i>
-                            </button>
-                        </a>
+                        <bouton routerLink="/search" class="btn" type="button">
+                          <i class="fa fa-search"></i>
+                        </bouton>
                       </span>
                   </div>
               </div>
@@ -44,4 +43,5 @@
         </ul>       
       </div>
     </div>
-  </nav>
+</nav>
+</body>

@@ -5,41 +5,44 @@ import { datasService } from '../datas.service';
 @Component({
   selector: 'app-data',
   template:`
-  <div class="data d-flex flex-column align-items-center">
-    <div class="fiche d-flex ">
-      <div class="artisan d-flex flex-column align-items-center justify-content-center">
-        <img src="/artisan.png" class="img-fluid">
-        <div class="etoiles d-flex">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <p>{{ data.note }}</p>
+  <body>
+    <div class="data d-flex flex-column align-items-center">
+      <div class="fiche d-flex ">
+        <div class="artisan d-flex flex-column align-items-center justify-content-center">
+          <img src="/artisan.png" class="img-fluid">
+          <div class="etoiles d-flex">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <p>{{ data.note }}</p>
+          </div>
+        </div>
+        <div class="artisan-texte d-flex flex-column justify-content-center align-items-center">
+          <h3>{{ data.name }}</h3>
+          <h3 class="blue ">Artisan {{ data.specialty }}</h3>
+          <h3>{{ data.location }}</h3>
+        </div>
+        <div class="artisan-about text-center d-flex align-items-center p-5">
+          <p>{{ data.about }}</p>
         </div>
       </div>
-      <div class="artisan-texte d-flex flex-column justify-content-center align-items-center">
-        <h3>{{ data.name }}</h3>
-        <h3 class="blue ">Artisan {{ data.specialty }}</h3>
-        <h3>{{ data.location }}</h3>
+    </div>
+    <div class="formulaire">
+      <div class="titre">
+        <img src="/Line-rouge.png">
+        <h2>Pour le contacter 
+          <i class="fa-regular fa-circle-down"></i>
+        </h2>
       </div>
-      <div class="artisan-about text-center d-flex align-items-center p-5">
-        <p>{{ data.about }}</p>
+      <app-formulaire/>
+      <div class="artisan-mail text-center">
+        <h3>Email: {{ data.email }}</h3>
       </div>
     </div>
-  </div>
-  <div class="formulaire">
-    <div class="titre">
-      <img src="/Line-rouge.png">
-      <h2>Pour le contacter 
-        <i class="fa-regular fa-circle-down"></i>
-      </h2>
-    </div>
-    <app-formulaire/>
-    <div class="artisan-mail text-center">
-      <h3>Email: {{ data.email }}</h3>
-    </div>
-  </div>
+  </body>
+
   `,
   styleUrl: './data.component.scss'
 })
