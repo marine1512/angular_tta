@@ -1,6 +1,23 @@
-# AngularTta
+# Angular_tta
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+
+# Objectifs :
+Grâce à ce devoir, vous serez capable de :
+- Utiliser un outil de maquettage
+- Construire la maquette de l'application optimisée pour chacun des équipements ciblés,
+l’enchaînement et la composition des écrans, en français ou en anglais
+- Structurer les pages selon les recommandations du W3C pour le web et le web mobile
+- Coder les pages web, y compris pour le web mobile, avec un langage de balise et
+feuilles de style, en suivant les principes de qualité et dans un style défensif en veillant
+à rendre l’application la plus résiliente possible
+- Utiliser un framework de type adaptatif, y compris pour le web mobile
+- Utiliser un outil de gestion de version de code source
+- Écrire un algorithme
+- Intégrer dans une page web des scripts événementiels avec un langage de script client,
+en suivant les principes de qualité et de sécurisation des clients web
+- Améliorer le site en utilisant des mécanismes asynchrones (de type AJAX, ...)
+- Corriger les erreurs et remédier aux vulnérabilités détectées
 
 ## Development server
 
