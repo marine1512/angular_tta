@@ -8,8 +8,8 @@ import { datasService } from '../datas.service';
   <body>
     <div class="data d-flex flex-column align-items-center">
       <div class="fiche d-flex ">
-        <div class="artisan d-flex flex-column align-items-center justify-content-center">
-          <img src="/artisan.png" class="img-fluid">
+        <div class="artisan d-flex flex-column align-items-center justify-content-center px-5 py-3">
+            <i class="fa-regular fa-user mb-3"></i>
           <div class="etoiles d-flex">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -37,7 +37,7 @@ import { datasService } from '../datas.service';
         </h2>
       </div>
       <app-formulaire/>
-      <div class="artisan-mail text-center">
+      <div class="artisan-mail text-center text-decoration-underline">
         <h3>Email: {{ data.email }}</h3>
       </div>
     </div>
